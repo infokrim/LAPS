@@ -10,7 +10,7 @@
 1. **Accéder à la page de téléchargement :**
    - Rendez-vous sur la page de téléchargement du Local Administrator Password Solution (LAPS).
    
-   ![![cap1_laps_download](https://github.com/user-attachments/assets/654e2ad4-24e0-409a-843f-efc6df067b19)
+  ![![cap1_laps_download](https://github.com/user-attachments/assets/654e2ad4-24e0-409a-843f-efc6df067b19)
 
 2. **Choisir la version appropriée :**
    - Sélectionnez le fichier d'installation correspondant à votre architecture système :
@@ -23,12 +23,12 @@
 3. **Lancer l'installation :**
    - Une fois le fichier téléchargé, double-cliquez sur le fichier `LAPS.x64.msi`.
    
-   !![cap3_launchmsi](https://github.com/user-attachments/assets/3e2dfda4-cd1e-4193-af0a-696d9be169ef)
-[
+  !![cap3_launchmsi](https://github.com/user-attachments/assets/3e2dfda4-cd1e-4193-af0a-696d9be169ef)
+
 4. **Suivre l'assistant d'installation :**
    - Cliquez sur **Next** à l'écran de bienvenue.
    
-   ![É![cap4_alaunch](https://github.com/user-attachments/assets/3a66824a-6a78-4888-b468-bcbfd0f8508c)
+  ![É![cap4_alaunch](https://github.com/user-attachments/assets/3a66824a-6a78-4888-b468-bcbfd0f8508c)
 
 5. **Sélectionner les composants :**
    - Choisissez les options suivantes :
@@ -56,7 +56,7 @@
 1. **Importer le module PowerShell LAPS :**
    - Ouvrez une fenêtre PowerShell en tant qu'administrateur.
    
-![cap9_cmdPWSL](https://github.com/user-attachments/assets/e60a846e-babb-410b-bf5d-702cfefb1a2b)
+   ![cap9_cmdPWSL](https://github.com/user-attachments/assets/e60a846e-babb-410b-bf5d-702cfefb1a2b)
 
    
    - Tapez la commande suivante :
@@ -117,7 +117,7 @@
 1. **Créer une nouvelle stratégie GPO :**
    - Accédez au gestionnaire de stratégie de groupe et créez une nouvelle stratégie nommée **LAPS Configuration**.
 
-![capGPO1_creation](https://github.com/user-attachments/assets/868ab6ba-2c32-4f04-927d-a0a797b33cc7)
+   ![capGPO1_creation](https://github.com/user-attachments/assets/868ab6ba-2c32-4f04-927d-a0a797b33cc7)
 
     
 3. **Configurer les paramètres de LAPS dans la GPO :**
@@ -132,23 +132,10 @@
 4. **Activer la GPO :**
    - Liez la GPO à l'Unité Organisationnelle (OU) contenant les ordinateurs sur lesquels LAPS sera appliqué.
    
-![capGPO4_enableGPO](https://github.com/user-attachments/assets/59299abe-4082-4756-b972-1072ef90b9c4)
+   ![capGPO4_enableGPO](https://github.com/user-attachments/assets/59299abe-4082-4756-b972-1072ef90b9c4)
 
    
    - Vérifiez que la GPO est correctement appliquée à l'OU.
-
-## Résolution des erreurs courantes
-
-- **Erreur de permissions lors de la configuration :**
-  - Si vous rencontrez des erreurs telles que `The object does not exist`, vérifiez que l'OU spécifiée existe dans Active Directory.
-
- ![erreur1](https://github.com/user-attachments/assets/f54e4dc4-f377-4974-ba16-58ab68c6e928)
-
- 
-- **Vérification des OUs :**
-  - Assurez-vous que les unités d'organisation sont correctement nommées et accessibles via le gestionnaire d'Active Directory.
-  - 
-  ![searchoucomputer](https://github.com/user-attachments/assets/e6fa2dd3-00ba-4ce3-8955-d68c703c4d57)
 
 
 ## Conclusion
